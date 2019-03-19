@@ -11,6 +11,7 @@ $("header .login").onclick = function(e){
 }
 
 $(".flip-modal").addEventListener("click",(e)=>{
+  e.stopPropagation();
   console.log(e.target)
   if(e.target.classList.contains('login')){
     $(".flip-modal").classList.remove("register")
@@ -24,6 +25,10 @@ $(".flip-modal").addEventListener("click",(e)=>{
     $('.flip-modal').style.display = 'none' 
   }
 })
+
+$("main").onclick = function(){
+  $('.flip-modal').style.display = 'none'
+}
 
 $(".modal-login form").addEventListener("submit",function(e){
   e.preventDefault()

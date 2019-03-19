@@ -2,6 +2,7 @@
     main {
         background: linear-gradient(to right top, rgba(38,50,105,0.78), rgba(255,152,0,0.45)), url(./bg.jpg) center center no-repeat  ;
         background-size: cover;
+        height: 100vh;
       }
   
       header {
@@ -55,7 +56,7 @@
       }
   
       .modal .content {
-        padding: 20px 40px;
+        padding: 20px 20px;
       }
       .modal .errormsg {
         color: #ff9800;
@@ -72,8 +73,8 @@
       }
       .modal .content input[type=text],
       .modal .content input[type=password] {
-        width: 100%;
-        padding: 10px 10px 10px 28px;
+        width: 95%;
+        padding: 10px 10px 10px 10px;
         outline: none;
       }
       .modal .content input[type=submit] {
@@ -96,5 +97,3 @@
         backface-visibility: hidden;
         transition: all 1s;
       }
-  
-  
